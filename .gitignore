@@ -362,8 +362,7 @@ MigrationBackup/
 # Fody - auto-generated XML schema
 FodyWeavers.xsd
 
-.gitattributes
-cadastro-api.sln
-appsettings.json
-appsettings.Development.json
-launchSettings.json
+/.gitattributes
+/appsettings.Development.json
+/appsettings.json
+/Properties/launchSettings.json
