@@ -1,20 +1,20 @@
-# API Para cadastro de contatos 
+# API Para cadastro de contatos ğŸ“â˜ï¸ğŸ“•
 
-é uma aplicação desenvolvida para facilitar o gerenciamento de contatos, permitindo realizar operações básicas como adicionar novos contatos, visualizar os contatos existentes, atualizar informações e excluir contatos da lista.
+Ã© uma aplicaÃ§Ã£o desenvolvida para facilitar o gerenciamento de contatos, permitindo realizar operaÃ§Ãµes bÃ¡sicas como adicionar novos contatos, visualizar os contatos existentes, atualizar informaÃ§Ãµes e excluir contatos da lista.
 
-## Funcionalidades 
+## Funcionalidades ğŸ“ˆğŸš€
 
- Cadastro de Novos Contatos: Os usuários podem adicionar novos contatos fornecendo o nome e o número de telefone.
+âœ… Cadastro de Novos Contatos: Os usuÃ¡rios podem adicionar novos contatos fornecendo o nome e o nÃºmero de telefone.
 
- Visualização de Contatos Existente: A aplicação permite acessar a lista de contatos já cadastrados, proporcionando uma visão geral dos contatos armazenados.
+âœ… VisualizaÃ§Ã£o de Contatos Existente: A aplicaÃ§Ã£o permite acessar a lista de contatos jÃ¡ cadastrados, proporcionando uma visÃ£o geral dos contatos armazenados.
 
- Atualização de Informações de Contatos: Os usuários têm a capacidade de modificar os detalhes de um contato existente, como o nome e o número de telefone, garantindo que as informações estejam sempre atualizadas.
+âœ… AtualizaÃ§Ã£o de InformaÃ§Ãµes de Contatos: Os usuÃ¡rios tÃªm a capacidade de modificar os detalhes de um contato existente, como o nome e o nÃºmero de telefone, garantindo que as informaÃ§Ãµes estejam sempre atualizadas.
 
- Exclusão de Contatos: A aplicação possibilita a remoção de contatos da lista, proporcionando flexibilidade no gerenciamento da base de dados de contatos.
+âœ… ExclusÃ£o de Contatos: A aplicaÃ§Ã£o possibilita a remoÃ§Ã£o de contatos da lista, proporcionando flexibilidade no gerenciamento da base de dados de contatos.
 
-## Tecnologias Utilizadas 
+## Tecnologias Utilizadas ğŸ“Œ 
 
-![símbolo do c#](https://img.shields.io/badge/C%23-239120?style=for-the-badge&logo=c-sharp&logoColor=white)
-![símbolo do dotnet](https://img.shields.io/badge/.NET-5C2D91?style=for-the-badge&logo=.net&logoColor=white)
-![símbolo do sql sever](https://img.shields.io/badge/Microsoft_SQL_Server-CC2927?style=for-the-badge&logo=microsoft-sql-server&logoColor=white)
-![símbolo do docker](https://img.shields.io/badge/Docker-2496ED?style=for-the-badge&logo=docker&logoColor=white)
+![sÃ­mbolo do c#](https://img.shields.io/badge/C%23-239120?style=for-the-badge&logo=c-sharp&logoColor=white)
+![sÃ­mbolo do dotnet](https://img.shields.io/badge/.NET-5C2D91?style=for-the-badge&logo=.net&logoColor=white)
+![sÃ­mbolo do sql sever](https://img.shields.io/badge/Microsoft_SQL_Server-CC2927?style=for-the-badge&logo=microsoft-sql-server&logoColor=white)
+![sÃ­mbolo do docker](https://img.shields.io/badge/Docker-2496ED?style=for-the-badge&logo=docker&logoColor=white)
