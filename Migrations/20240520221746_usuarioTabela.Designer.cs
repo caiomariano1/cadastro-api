@@ -3,6 +3,7 @@ using System;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.EntityFrameworkCore.Infrastructure;
 using Microsoft.EntityFrameworkCore.Metadata;
+using Microsoft.EntityFrameworkCore.Migrations;
 using Microsoft.EntityFrameworkCore.Storage.ValueConversion;
 using cadastro_api.Data;
 
@@ -11,9 +12,10 @@ using cadastro_api.Data;
 namespace cadastro_api.Migrations
 {
     [DbContext(typeof(SistemaContatosDbContext))]
-    partial class SistemaContatosDbContextModelSnapshot : ModelSnapshot
+    [Migration("20240520221746_usuarioTabela")]
+    partial class usuarioTabela
     {
-        protected override void BuildModel(ModelBuilder modelBuilder)
+        protected override void BuildTargetModel(ModelBuilder modelBuilder)
         {
 #pragma warning disable 612, 618
             modelBuilder
