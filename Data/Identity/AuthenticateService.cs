@@ -1,4 +1,5 @@
 ﻿using cadastro_api.Domain.Account;
+using cadastro_api.Entities;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.IdentityModel.Tokens;
 using System.IdentityModel.Tokens.Jwt;
@@ -64,7 +65,12 @@ namespace cadastro_api.Data.Identity
             return new JwtSecurityTokenHandler().WriteToken(token);
         }
 
-        public async Task<bool> UserExist(string email)
+        public async Task<Usuario> GetUserByEmail(string email)
+        {
+            return await _context.Usuario.Where(x => x.Email.ToLower() == email.ToLower()).FirstOrDefaultAsync();
+        }
+
+        public async Task<bool> UserExists(string email)
         {
             var usuario = await _context.Usuario.Where(x => x.Email.ToLower() == email.ToLower()).FirstOrDefaultAsync();
             if (usuario == null)

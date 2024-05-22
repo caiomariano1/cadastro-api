@@ -1,7 +1,11 @@
 using cadastro_api.Data;
+using cadastro_api.Data.Identity;
+using cadastro_api.Domain.Account;
 using cadastro_api.Infra.Ioc;
+using cadastro_api.Mappings;
 using cadastro_api.Repositories;
 using cadastro_api.Repositories.Interfaces;
+using cadastro_api.Services;
 using Microsoft.AspNetCore.Authentication.JwtBearer;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.IdentityModel.Tokens;
@@ -16,7 +20,6 @@ namespace cadastro_api
             var builder = WebApplication.CreateBuilder(args);
 
             // Add services to the container.
-
             builder.Services.AddControllers();
             // Learn more about configuring Swagger/OpenAPI at https://aka.ms/aspnetcore/swashbuckle
             builder.Services.AddEndpointsApiExplorer();
@@ -49,7 +52,12 @@ namespace cadastro_api
                 };
             });
 
+            builder.Services.AddAutoMapper(typeof(DomainToDTOMappingProfile));
+
             builder.Services.AddScoped<IContatoRepositorio, ContatoRepositorio>();
+            builder.Services.AddScoped<IUsuarioRepositorio, UsuarioRepositorio>();
+            builder.Services.AddScoped<IUsuarioService, UsuarioService>();
+            builder.Services.AddScoped<IAuthenticate, AuthenticateService>();
 
             var app = builder.Build();
 
@@ -69,6 +77,7 @@ namespace cadastro_api
 
             app.UseHttpsRedirection();
 
+            app.UseAuthentication();
             app.UseAuthorization();
 
 

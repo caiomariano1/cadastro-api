@@ -5,7 +5,7 @@ namespace cadastro_api.DTOs
 {
     public class UsuarioDTO
     {
-        //public int Id { get; set; }
+        public int Id { get; set; }
         [Required(ErrorMessage = "O nome é obrigatório.")]
         [MaxLength(250, ErrorMessage = "O nome deve ter no máximo 250 caracteres.")]
         public string Nome { get; set; }
