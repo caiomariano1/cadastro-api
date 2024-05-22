@@ -1,5 +1,6 @@
 ﻿using cadastro_api.Models;
 using cadastro_api.Repositories.Interfaces;
+using Microsoft.AspNetCore.Authorization;
 using Microsoft.AspNetCore.Http;
 using Microsoft.AspNetCore.Mvc;
 
@@ -7,6 +8,7 @@ namespace cadastro_api.Controllers
 {
     [Route("api/[controller]")]
     [ApiController]
+    [Authorize]
     public class ContatoController : ControllerBase
     {
         private readonly IContatoRepositorio _contatoRepositorio;

@@ -2,6 +2,8 @@
 using cadastro_api.DTOs;
 using cadastro_api.Entities;
 using cadastro_api.Repositories.Interfaces;
+using System.Security.Cryptography;
+using System.Text;
 
 namespace cadastro_api.Services
 {
@@ -32,6 +34,16 @@ namespace cadastro_api.Services
         public async Task<UsuarioDTO> Incluir(UsuarioDTO usuarioDTO)
         {
             var usuario = _mapper.Map<Usuario>(usuarioDTO);
+
+            if(usuarioDTO.Password != null)
+            {
+                using var hmac = new HMACSHA512();
+                byte[] passwordHash = hmac.ComputeHash(Encoding.UTF8.GetBytes(usuarioDTO.Password));
+                byte[] passwordSalt = hmac.Key;
+
+                usuario.AlterarSenha(passwordHash, passwordSalt);
+            }
+
             var usuarioIncluido = await _repository.Incluir(usuario);
             return _mapper.Map<UsuarioDTO>(usuarioIncluido);
         }
