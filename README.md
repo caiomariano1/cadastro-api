@@ -1,6 +1,6 @@
 # API Para cadastro de contatos 📞☎️📕
 
-é uma aplicação desenvolvida para facilitar o gerenciamento de contatos, permitindo realizar operações básicas como adicionar novos contatos, visualizar os contatos existentes, atualizar informações e excluir contatos da lista.
+Esta aplicação foi desenvolvida para facilitar o gerenciamento de contatos, permitindo realizar operações básicas como adicionar novos contatos, visualizar os contatos existentes, atualizar informações e excluir contatos da lista. Além disso, oferece funcionalidades para login e cadastro de usuários, garantindo a seguranca e a personalização do acesso aos dados.
 
 ## Funcionalidades 📈🚀
 
@@ -12,7 +12,11 @@
 
 ✅ Exclusão de Contatos: A aplicação possibilita a remoção de contatos da lista, proporcionando flexibilidade no gerenciamento da base de dados de contatos.
 
-## Tecnologias Utilizadas 📌 
+✅ Cadastro de usuários: Os usuários podem se cadastrar no sistema fornecendo informações básicas, que são armazenadas no banco de dados.
+
+✅ Login de usuários: Os usuários podem fazer login no sistema utilizando suas credenciais. A autenticação é realizada por meio de tokens JWT, garantindo seguranca e gerenciamento eficiente de sessões.
+
+## Tecnologias Utilizadas  
 
 ![símbolo do c#](https://img.shields.io/badge/C%23-239120?style=for-the-badge&logo=c-sharp&logoColor=white)
 ![símbolo do dotnet](https://img.shields.io/badge/.NET-5C2D91?style=for-the-badge&logo=.net&logoColor=white)
